@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="checkout.root">
             <arguments>
@@ -7,33 +8,17 @@
                     <item name="components" xsi:type="array">
                         <item name="checkout" xsi:type="array">
                             <item name="children" xsi:type="array">
-                                <item name="steps" xsi:type="array">
+                                <item name="sidebar" xsi:type="array">
                                     <item name="children" xsi:type="array">
-                                        <item name="shipping-step" xsi:type="array">
+                                        <item name="summary" xsi:type="array">
                                             <item name="children" xsi:type="array">
-                                                <item name="shippingAddress" xsi:type="array">
+                                                <item name="summary-discount" xsi:type="array">
+                                                    <item name="component" xsi:type="string">Magento_SalesRule/js/view/payment/discount</item>
                                                     <item name="children" xsi:type="array">
-                                                        <item name="shipping-address-fieldset" xsi:type="array">
-                                                            <item name="children" xsi:type="array">
-                                                                <item name="lastname" xsi:type="array">
-                                                                    <item name="sortOrder" xsi:type="string">18</item>
-                                                                </item>
-                                                                <item name="firstname" xsi:type="array">
-                                                                    <item name="sortOrder" xsi:type="string">20</item>
-                                                                </item>
-                                                                <item name="country_id" xsi:type="array">
-                                                                    <item name="sortOrder" xsi:type="string">25</item>
-                                                                </item>
-                                                                <item name="postcode" xsi:type="array">
-                                                                    <item name="sortOrder" xsi:type="string">80</item>
-                                                                </item>
-                                                                <item name="company" xsi:type="array">
-                                                                    <item name="sortOrder" xsi:type="string">100</item>
-                                                                </item>
-                                                                <item name="telephone" xsi:type="array">
-                                                                    <item name="sortOrder" xsi:type="string">90</item>
-                                                                </item>
-                                                            </item>
+                                                        <item name="errors" xsi:type="array">
+                                                            <item name="sortOrder" xsi:type="string">0</item>
+                                                            <item name="component" xsi:type="string">Magento_SalesRule/js/view/payment/discount-messages</item>
+                                                            <item name="displayArea" xsi:type="string">messages</item>
                                                         </item>
                                                     </item>
                                                 </item>
